@@ -1,15 +1,15 @@
-package me.octxne.pluginbase.core;
+package me.octxne.tmcguns.core;
 
 import org.bukkit.command.CommandExecutor;
 import org.bukkit.plugin.java.JavaPlugin;
 
-import me.octxne.pluginbase.core.file.files.ConfigurationFile;
-import me.octxne.pluginbase.utilities.Printer;
-import me.octxne.pluginbase.utilities.type.PrinterType;
+import me.octxne.tmcguns.core.file.files.ConfigurationFile;
+import me.octxne.tmcguns.utilities.Printer;
+import me.octxne.tmcguns.utilities.type.PrinterType;
 
-public class PluginBase extends JavaPlugin
+public class TMCGuns extends JavaPlugin
 {
-	private static PluginBase instance;
+	private static TMCGuns instance;
 	
 	private String name, author;
 	
@@ -19,7 +19,7 @@ public class PluginBase extends JavaPlugin
 	public void onEnable()
 	{
 		this.setPlugin(this);
-		this.setPluginName("PluginBase");
+		this.setPluginName("TMCGuns");
 		this.setPluginAuthor("Octxne");
 		this.setPluginVersion(0.1D);
 		this.registerCommands();
@@ -36,7 +36,7 @@ public class PluginBase extends JavaPlugin
 		this.setPlugin(null);
 	}
 	
-	public static PluginBase getInstance()
+	public static TMCGuns getInstance()
 	{
 		return instance;
 	}
@@ -58,10 +58,10 @@ public class PluginBase extends JavaPlugin
 	
 	public String getPrefix()
 	{
-		return ConfigurationFile.getFile().getConfiguration().getString("pluginBase.settings.prefix");
+		return ConfigurationFile.getFile().getConfiguration().getString("tmcguns.settings.prefix");
 	}
 	
-	public void setPlugin(PluginBase plugin)
+	public void setPlugin(TMCGuns plugin)
 	{
 		instance = plugin;
 	}
@@ -83,7 +83,7 @@ public class PluginBase extends JavaPlugin
 	
 	public void setPrefix(String prefix)
 	{
-		ConfigurationFile.getFile().getConfiguration().set("pluginBase.settings.prefix", prefix);
+		ConfigurationFile.getFile().getConfiguration().set("tmcguns.settings.prefix", prefix);
 		ConfigurationFile.getFile().saveConfiguration();
 	}
 	

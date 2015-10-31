@@ -1,4 +1,4 @@
-package me.octxne.pluginbase.utilities;
+package me.octxne.tmcguns.utilities;
 
 import org.bukkit.ChatColor;
 import org.bukkit.command.CommandSender;

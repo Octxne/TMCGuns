@@ -1,5 +1,5 @@
-name: PluginBase
+name: TMCGuns
 version: 0.1
-main: me.octxne.pluginbase.core.PluginBase
+main: me.octxne.tmcguns.core.TMCGuns
 author: Octxne
-description: PluginBase is a fairly advanced plugin base developed by Octxne for private usage.
+description: TMCGuns is a gun plugin developed by Octxne for a server called TMCNetwork.

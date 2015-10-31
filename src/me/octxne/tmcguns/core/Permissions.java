@@ -1,4 +1,4 @@
-package me.octxne.pluginbase.core;
+package me.octxne.tmcguns.core;
 
 import org.bukkit.entity.Player;
 

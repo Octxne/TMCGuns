@@ -1,11 +1,11 @@
-package me.octxne.pluginbase.core.file;
+package me.octxne.tmcguns.core.file;
 
 import java.io.File;
 
 import org.bukkit.configuration.file.FileConfiguration;
 import org.bukkit.configuration.file.YamlConfiguration;
 
-import me.octxne.pluginbase.core.PluginBase;
+import me.octxne.tmcguns.core.TMCGuns;
 
 public class Filer
 {
@@ -15,12 +15,12 @@ public class Filer
 
 	public Filer(String fileName)
 	{
-		if (!PluginBase.getInstance().getDataFolder().exists())
+		if (!TMCGuns.getInstance().getDataFolder().exists())
 		{
-			PluginBase.getInstance().getDataFolder().mkdir();
+			TMCGuns.getInstance().getDataFolder().mkdir();
 		}
 		
-		this.file = new File(PluginBase.getInstance().getDataFolder(), fileName);
+		this.file = new File(TMCGuns.getInstance().getDataFolder(), fileName);
 
 		if (!this.getFile().exists())
 		{

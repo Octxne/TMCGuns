@@ -1,4 +1,4 @@
-package me.octxne.pluginbase.utilities.type;
+package me.octxne.tmcguns.utilities.type;
 
 public enum PrinterType
 {
