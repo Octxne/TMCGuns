@@ -1,0 +1,5 @@
+name: PluginBase
+version: 0.1
+main: me.octxne.pluginbase.core.PluginBase
+author: Octxne
+description: PluginBase is a fairly advanced plugin base developed by Octxne for private usage.
